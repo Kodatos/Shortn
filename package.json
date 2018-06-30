@@ -1,0 +1,27 @@
+{
+  "name": "shortn",
+  "version": "1.0.0",
+  "description": "A URL Shortener made with Node, Express and Mongoose",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devStart": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kodatos/Shortn.git"
+  },
+  "author": "Kodatos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kodatos/Shortn/issues"
+  },
+  "homepage": "https://github.com/Kodatos/Shortn#readme",
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "mongoose": "^5.1.7"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.5"
+  }
+}
