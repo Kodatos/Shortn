@@ -12,7 +12,7 @@ const shortnSchema = new Schema({
     maxlength: 8,
     required: true
   },
-  last_updated: {
+  created_at: {
     type: Date,
     default: Date.now
   }
