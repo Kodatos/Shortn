@@ -4,13 +4,13 @@ const Schema = mongoose.Schema;
 const shortnSchema = new Schema({
   long_url: {
     type: String,
-    required: true
+    required: [true, "Original URL required!"]
   },
   shortId: {
     type: String,
-    minlength: 5,
+    minlength: 8,
     maxlength: 8,
-    required: true
+    required: [true, "shortId required!"]
   },
   created_at: {
     type: Date,

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A URL Shortener made with Node, Express and Mongoose",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "NODE_ENV=test nodemon app.js",
     "devStart": "nodemon app.js"
   },
   "repository": {
@@ -19,7 +19,8 @@
   "dependencies": {
     "dotenv": "^6.0.0",
     "express": "^4.16.3",
-    "mongoose": "^5.1.7"
+    "mongoose": "^5.1.7",
+    "valid-url": "^1.0.9"
   },
   "devDependencies": {
     "nodemon": "^1.17.5"
