@@ -28,9 +28,9 @@ router.post("/addURL", async (req, res) => {
   let generatedShortId;
   try {
     const initialSearch = await dbController.getShortID(url);
-    if (initialSearch) generatedShortId = initialSearch.shortId;
+    if (initialSearch) generatedShortId = initialSearch;
     else generatedShortId = await dbController.addNewUrl(url);
-    res.status(200).json({ shortId: generatedShortId });
+    res.status(200).json({ shortID: generatedShortId });
   } catch (err) {
     console.log(err.message);
     res.sendStatus(500);

@@ -4,14 +4,13 @@ const mongoose = require("mongoose");
 const router = require("./router");
 require("dotenv").config();
 
-mongoose.connect(
-  process.env.NODE_ENV === "test"
-    ? process.env.MONGO_TEST_URI
-    : process.env.MONGO_URI
-);
+mongoose.connect(process.env.MONGO_URI);
 mongoose.Promise = global.Promise;
 
 app.use(express.static(__dirname + "/public"));
 app.use(router);
 
+app.get("/", (req, res) => {
+  res.sendFile("/public/index.html");
+});
 app.listen(8190);

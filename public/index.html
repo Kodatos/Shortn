@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>
+    Shortn
+  </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+  <link href="styles.css" type="text/css" rel="stylesheet">
+</head>
+
+<body class="indigo darken-3 container">
+  <h3 id="heading" class="center-align white-text">Shortn</h3>
+  <h5 id="description" class="center-align white-text">A simple URL Shortener</h5>
+  <div class="card">
+    <div id="inputContainer" class="row container valign-wrapper">
+      <input id="urlInput" type="url" class="validate col s10" placeholder="Enter a URL here">
+      <button class="waves-effect waves red-text accent-2 btn-flat col s2" id="shorten">Shortn!</button>
+    </div>
+    <div id="messagesContainer" class="row container valign-wrapper">
+      <div id="message" class="col s6 offset-s1">Your Shortnd URL is: </div>
+      <button class="blue-text btn-flat col s2 pull-s1" id="copyUrl">Copy</button>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

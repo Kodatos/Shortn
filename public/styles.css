@@ -1,0 +1,13 @@
+#shorten {
+  margin-right: 8px
+}
+
+#urlInput {
+  font-size: 16px;
+  margin: 2%
+}
+
+#message, #copyUrl {
+  display: none;
+  margin: 8px;
+}
